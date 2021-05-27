@@ -12,10 +12,8 @@ class Logger:
             file.write(log_entry)
         except:
             print("Error when writing to", file_path)
-        else:
-            print("Message saved to", file_path)
         finally:
             try:
                 file.close()
             finally:
-                print(file_path, "closed")
+                pass

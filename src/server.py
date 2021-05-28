@@ -5,6 +5,9 @@ import types
 from actions import *
 from counter import Personel_Counter
 
+HOST = 'localhost'
+PORT = 3001
+
 personel_in_building = Personel_Counter()
 
 
@@ -40,8 +43,6 @@ def handle_action(action):
     print("Could not process action")
 
 
-HOST = 'localhost'
-PORT = 3001
 sel = selectors.DefaultSelector()
 serv_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serv_sock.bind((HOST, PORT))

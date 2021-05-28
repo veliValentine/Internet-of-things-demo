@@ -19,6 +19,13 @@ def isOpen():
     open = int(state[0])
     return open == 1
 
+def lockDoor():
+    customWrite(DOOR, "0,1")
+
+
+def unlockDoor():
+    customWrite(DOOR, "0,0")
+
 
 def flipFan():
     state = int(customRead(FAN))
@@ -40,14 +47,6 @@ def isOn():
     THRESHOLD = 100
     sw = int(digitalRead(SWITCH))
     return sw > THRESHOLD
-
-
-def lockDoor():
-    customWrite(DOOR, "0,1")
-
-
-def unlockDoor():
-    customWrite(DOOR, "0,0")
 
 
 def main():

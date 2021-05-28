@@ -14,7 +14,7 @@ class Personel_Counter:
         self.__log_person_count("Person entered")
 
     def exit(self):
-        if self.__person_count > 1:
+        if self.__person_count > 0:
             self.__person_count -= 1
             print("Person left the building")
             self.__log_person_count("Person left")
@@ -24,5 +24,5 @@ class Personel_Counter:
         print("Emergency")
         self.__log_person_count("Emergency")
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"Persons in building: {self.__person_count}"

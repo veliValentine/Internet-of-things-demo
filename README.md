@@ -1,4 +1,4 @@
-# Office Internet of Things demo
+# Office - Internet of Things demo
 Project demostrates how to connect office equipment with server.
 
 Usage of IoT equipment is demostrated using Cisco packet tracer. Main scripting language is Python 3. Python is used mainly on the server side but also programming the office equipment.
